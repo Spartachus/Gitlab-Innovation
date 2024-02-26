@@ -1,0 +1,21 @@
+{% extends "base.html" %}{% load static %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<div class = "text-4xl flex mt-6 justify-center font-black mb-8">
+<h2>Get access to all the features on Ecoshift</h2>
+</div>
+<div class = "hover:bg-blue-100 border-1 border-cyan-900 mx-96 py-8 mt-9 text-xl flex mt-6 justify-center font-semibold mb-8">
+
+<form method="post">
+  {% csrf_token %}
+  {{ form }}
+</div>
+  <div class="flex justify-center mt-8 mb-8">
+    <button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-blue-500 hover:bg-blue-700 text-white text-lg font-bold py-2 px-4 rounded-full">
+      Sign Up
+    </button>
+  </div>
+</form>
+{% endblock %}
